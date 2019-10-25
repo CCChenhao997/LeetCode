@@ -17,11 +17,12 @@ class TreeNode:
 class Solution:
     # 返回从上到下每个节点值列表，例：[1,2,3]
     def PrintFromTopToBottom(self, root):
+        # if root is None:
+        #     return []
         store = []
-        if root is None:
-            return []
         Deque = []
-        Deque.append(root)
+        if root:
+            Deque.append(root)
         while Deque:
             temp = Deque.pop(0)
             store.append(temp.val)
