@@ -38,11 +38,11 @@ class Solution:
         m = len(nums2)
         left = (n+m+1) // 2
         right = (n+m+2) // 2
-        return (self.getKth(nums1, 0, n-1, nums2, 0, m-1, left) + self.getKth(nums1, 0, n-1, nums2, 0, m-1, right))*0.5
+        return (self.getKth(nums1, 0, n, nums2, 0, m, left) + self.getKth(nums1, 0, n, nums2, 0, m, right))*0.5
     
     def getKth(self, nums1, start1, end1, nums2, start2, end2, k):
-        len1 = end1 - start1 + 1
-        len2 = end2 - start2 + 1
+        len1 = end1 - start1
+        len2 = end2 - start2
         # 让len1的长度小于len2，这样就能保证如果有数组空了，一定是len1
         if len1 > len2: 
             return self.getKth(nums2, start2, end2, nums1, start1, end1, k)
