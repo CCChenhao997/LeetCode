@@ -30,5 +30,6 @@ class Solution:
         return ''.join(sList)
     
 
+
 s = Solution()
 print(s.reverseVowels("leetcode"))
