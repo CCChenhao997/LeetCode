@@ -37,6 +37,7 @@ class Solution:
                 return head
             p2 = p2.next
     
+    # Approach 1: Two pass algorithm
     def removeNthFromEnd2(self, head: ListNode, n: int) -> ListNode:
         """
         The "dummy" node is used to simplify some corner cases such as a list with only one node, or removing the head of the list. 
@@ -55,4 +56,17 @@ class Solution:
         first.next = first.next.next
         return dummy.next
 
-            
+    # Approach 2: One pass algorithm
+    # Two pointers
+    def removeNthFromEnd3(self, head: ListNode, n: int) -> ListNode:
+        dummy, dummy.next = ListNode(0), head
+        first, second = dummy, dummy
+        # Advances first pointer so that the gap between first and second is n nodes apart
+        for i in range(n+1):
+            first = first.next
+        # Move first to the end, maintaining the gap
+        while first:
+            first = first.next
+            second = second.next
+        second.next = second.next.next
+        return dummy.next
