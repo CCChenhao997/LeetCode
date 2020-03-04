@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-03-04 10:24:10
 @LastEditors: chenhao
-@LastEditTime: 2020-03-04 10:54:01
+@LastEditTime: 2020-03-04 20:08:01
 '''
 
 """
@@ -54,10 +54,11 @@ class Solution:
         return self.helper(s, t) or self.isSubtree(s.left, t) or self.isSubtree(s.right, t)  
         
     def helper(self, s: TreeNode, t: TreeNode) -> bool:
-        if (s and not t) or (not s and t):  # One of s and t is None, return False
-            return False
-        if s and t and (s.val != t.val):    # Both s and t exist, but s.val != t.val, then return False
-            return False
-        if (not s and not t) or (s.left is None and s.right is None and t.left is None and t.right is None):
+        if not s and not t:
             return True
+        if not s or not t:  # One of s and t is None, return False
+            return False
+        if s.val != t.val:  # Both s and t exist, but s.val != t.val, then return False
+            return False
+        
         return self.helper(s.left, t.left) and self.helper(s.right, t.right)
