@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-03-16 10:36:04
 @LastEditors: chenhao
-@LastEditTime: 2020-03-16 11:56:53
+@LastEditTime: 2020-03-16 14:25:49
 '''
 
 """
@@ -23,11 +23,11 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 """
 
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
