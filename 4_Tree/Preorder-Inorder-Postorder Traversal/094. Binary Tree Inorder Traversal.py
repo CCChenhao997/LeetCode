@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-03-16 14:55:47
 @LastEditors: chenhao
-@LastEditTime: 2020-03-16 16:42:49
+@LastEditTime: 2020-03-16 16:51:03
 '''
 
 """
@@ -62,6 +62,7 @@ class Solution:
                 valList.append(node.val)
         return valList
         
+
 
 if __name__=="__main__":
     node1 = TreeNode(2)
