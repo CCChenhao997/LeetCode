@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-03-24 09:06:38
 @LastEditors: chenhao
-@LastEditTime: 2020-03-24 09:36:12
+@LastEditTime: 2020-03-24 09:37:09
 '''
 
 """
@@ -63,16 +63,3 @@ class Solution:
             else:
                 return True
         return False
-        
-    
-
-if __name__=="__main__":
-    node1 = TreeNode(2)
-    node2 = TreeNode(1)
-    node3 = TreeNode(3)
-    
-    node1.left = node2
-    node1.right = node3
-    
-    s = Solution()
-    print(s.findTarget(node1, 4))
