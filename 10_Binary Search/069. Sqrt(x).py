@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-05-06 21:29:30
 @LastEditors: chenhao
-@LastEditTime: 2020-05-06 21:52:04
+@LastEditTime: 2020-05-06 21:54:04
 '''
 
 """
@@ -25,8 +25,6 @@ Explanation: The square root of 8 is 2.82842..., and since
 
 class Solution:
     def mySqrt(self, x: int) -> int:
-        if x <= 1:
-            return x
         l, r = 0, x
         while l <= r:
             c = l + (r - l) // 2
