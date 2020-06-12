@@ -4,7 +4,7 @@
 @Author: chenhao
 @Date: 2020-06-12 16:20:19
 @LastEditors: chenhao
-@LastEditTime: 2020-06-12 20:58:02
+@LastEditTime: 2020-06-12 21:02:22
 '''
 
 """
@@ -44,4 +44,3 @@ class Solution:
                 if hash_dict[s[i]] != t[i]:
                     return False
         return True
-                
