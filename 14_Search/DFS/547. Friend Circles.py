@@ -4,8 +4,10 @@
 @Author: chenhao
 @Date: 2020-07-19 00:47:34
 @LastEditors: chenhao
-@LastEditTime: 2020-07-19 01:02:55
+@LastEditTime: 2020-07-20 10:54:22
 '''
+
+from typing import List
 
 class Solution:
     def findCircleNum(self, M: List[List[int]]) -> int:
