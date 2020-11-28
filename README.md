@@ -1,6 +1,6 @@
 ## Leetcode
 
-### 栈、队列、堆
+### 1. 栈、队列、堆
 
 例题1. 用队列实现栈（栈、队列）[[link]](https://leetcode-cn.com/problems/implement-stack-using-queues/)
 
@@ -18,29 +18,89 @@
 
 ------------------------
 
-### 链表
+### 2. 链表
 
 例题1-a. 反转链表[[link]](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 例题1-b. 反转链表II[[link]](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
-例题2. 链表求交点
+例题2. 相交链表[[link]](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
-例题3. 链表求环
+例题3-a. 环形链表[[link]](https://leetcode-cn.com/problems/linked-list-cycle/)
 
-例题4. 链表划分
+例题3-b. 环形链表 II[[link]](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
-例题5. 复杂链表的复制
+例题4. 分隔链表[[link]](https://leetcode-cn.com/problems/partition-list/)
 
-例题6-a. 2个排序链表归并
+例题5. 复制带随机指针的链表[[link]](https://leetcode-cn.com/problems/copy-list-with-random-pointer/)
 
-例题6-b. K个排序链表归并
+例题6-a. 合并两个有序链表[[link]](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+
+例题6-b. 合并K个升序链表[[link]](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+
+------------
+
+### 3. 贪心
+
+例题1. 分发饼干[[link]](https://leetcode-cn.com/problems/assign-cookies/)（排序、贪心）
+
+例题2. 摆动序列[[link]](https://leetcode-cn.com/problems/wiggle-subsequence/)（贪心）
+
+例题3. 移掉K位数字[[link]](https://leetcode-cn.com/problems/remove-k-digits/)（栈、贪心）
+
+例题4-a. 跳跃游戏[[link]](https://leetcode-cn.com/problems/jump-game/)（贪心）
+
+例题4-b. 跳跃游戏 II[[link]](https://leetcode-cn.com/problems/jump-game-ii/)（贪心）
+
+例题5. 用最少数量的箭引爆气球[[link]](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)（排序、贪心）
+
+例题6. 最低加油次数[[link]](https://leetcode-cn.com/problems/minimum-number-of-refueling-stops/)（堆、贪心）
+
+-------------------
+
+### 4. 递归、回溯与分治
+
+例题1-a. 子集[[link]](https://leetcode-cn.com/problems/subsets/)（回溯法、位运算法）
+
+例题1-b. 子集 II[[link]](https://leetcode-cn.com/problems/subsets-ii/)（回溯法）
+
+例题1-c. 组合总和[[link]](https://leetcode-cn.com/problems/combination-sum/)（回溯、剪枝）
+
+例题1-d. 组合总和 II[[link]](https://leetcode-cn.com/problems/combination-sum-ii/)（回溯法、剪枝）
+
+例题1-e. 全排列[[link]](https://leetcode-cn.com/problems/permutations/)（回溯法）
+
+例题1-f. 全排列 II[[link]](https://leetcode-cn.com/problems/permutations-ii/)（回溯法）
+
+例题2. 生成括号（递归设计）
+
+例题3. N皇后（回溯法）
+
+预备知识：分治算法与归并排序
+
+例题4. 逆序数（分治法、归并排序应用）
+
+--------------
+
+### 5. 二叉树与图
+
+----------------
+
+### 6. 二分查找与二叉排序树
+
+-----------
+
+### 7. 哈希表与字符串
+
+--------------
+
+### 8. 搜索
 
 ------------------
 
-### 动态规划
+### 9. 动态规划
 
-**例题1. 爬楼梯**[[link]](https://leetcode-cn.com/problems/climbing-stairs/)
+例题1. 爬楼梯[[link]](https://leetcode-cn.com/problems/climbing-stairs/)
 
 1. 确认原问题与子问题
 
@@ -58,7 +118,7 @@
 
    将求第i个状态的值转移为求第i-1个状态值与第i-2个状态的值，动态规划转移方程，dp[i]=dp[i-1]+dp[i-2]; (i>=3)
 
-**例题2. 打家劫舍**[[link]](https://leetcode-cn.com/problems/house-robber/)
+例题2. 打家劫舍[[link]](https://leetcode-cn.com/problems/house-robber/)
 
 1. 确认原问题与子问题
 
@@ -94,11 +154,9 @@
 
 例题8. 地下城游戏[[link]](https://leetcode-cn.com/problems/dungeon-game/)
 
+---------------
 
-
-
-
-
+### 10. 复杂数据结构
 
 
 
