@@ -85,20 +85,39 @@
 - 例题1. 路径总和 II[[link]](https://leetcode-cn.com/problems/path-sum-ii/)（二叉树深搜）
 - 例题2. 二叉树的最近公共祖先[[link]](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)（二叉树性质）
 - 例题3. 二叉树展开为链表[[link]](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)（二叉树与链表）
-- 例题4. 侧面观察二叉树（二叉树宽搜）
-- 例题5. 课程安排（有向图判断环）
+- 例题4. 二叉树的右视图[[link]](https://leetcode-cn.com/problems/binary-tree-right-side-view/)（二叉树宽搜）
+- 例题5. 课程表[[link]](https://leetcode-cn.com/problems/course-schedule/)（有向图判断环）
 
 ----------------
 
 ### 6. 二分查找与二叉排序树
 
+- 例题1. 搜索插入位置[[link]](https://leetcode-cn.com/problems/search-insert-position/)（二分查找）
+- 例题2. 在排序数组中查找元素的第一个和最后一个位置[[link]](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)（二分查找）
+- 例题3. 搜索旋转排序数组[[link]](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)（二分查找）
+- 例题4. 序列化和反序列化二叉搜索树[[link]](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
+- 例题5. 计算右侧小于当前元素的个数[[link]](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/)（二叉查找树应用）
+
 -----------
 
 ### 7. 哈希表与字符串
 
+- 例题1. 最长回文串（字符哈希）
+- 例题2. 词语模式（字符串哈希）
+- 例题3. 同字符词语分组（数组哈希）
+- 例题4. 无重复字符的最长子串（字符哈希）
+- 例题5. 重复的DNA序列（字符串哈希）
+- 例题6. 最小窗口子串（哈希维护窗口）
+
 --------------
 
 ### 8. 搜索
+
+- 例题1. 岛屿数量（深搜、宽搜）
+- 例题2-a. 词语阶梯（宽搜、图、哈希表）
+- 例题2-b. 词语阶梯2（记录路径的宽搜、图、哈希表）
+- 例题3. 火柴棍摆正方形（回溯搜索、位运算）
+- 例题4. 收集雨水（带优先级的宽搜、堆）
 
 ------------------
 
@@ -124,7 +143,10 @@
 
 ### 10. 复杂数据结构
 
-
+- 例题1. 实现trie树（trie树建立）
+- 例题2. 添加与查找单词（trie树搜索）
+- 例题3. 朋友圈（并查集、图的搜索）
+- 例题4. 区域和的查询
 
 
 
