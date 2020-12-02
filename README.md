@@ -102,9 +102,9 @@
 
 ### 7. 哈希表与字符串
 
-- 例题1. 最长回文串（字符哈希）
-- 例题2. 词语模式（字符串哈希）
-- 例题3. 同字符词语分组（数组哈希）
+- 例题1. 最长回文串[[link]](https://leetcode-cn.com/problems/longest-palindrome/)（字符哈希）
+- 例题2. 单词规律[[link]](https://leetcode-cn.com/problems/word-pattern/)（字符串哈希）
+- 例题3. 字母异位词分组[[link]](https://leetcode-cn.com/problems/group-anagrams/)（数组哈希）
 - 例题4. 无重复字符的最长子串（字符哈希）
 - 例题5. 重复的DNA序列（字符串哈希）
 - 例题6. 最小窗口子串（哈希维护窗口）
