@@ -114,7 +114,7 @@
 ### 8. 搜索
 
 - 例题1. 岛屿数量[[link]](https://leetcode-cn.com/problems/number-of-islands/)（深搜、宽搜）
-- 例题2-a. 词语阶梯（宽搜、图、哈希表）
+- 例题2-a. 单词接龙[[link]](https://leetcode-cn.com/problems/word-ladder/)（宽搜、图、哈希表）
 - 例题2-b. 词语阶梯2（记录路径的宽搜、图、哈希表）
 - 例题3. 火柴棍摆正方形（回溯搜索、位运算）
 - 例题4. 收集雨水（带优先级的宽搜、堆）
