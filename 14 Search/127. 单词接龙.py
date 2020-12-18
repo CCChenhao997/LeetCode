@@ -55,7 +55,7 @@ class Solution:
         # * BFS 
         # queue = deque()
         # queue.append(beginWord)
-        # visited = set()    # {'h', 't', 'i'}
+        # visited = set()
         # visited.add(beginWord)
         # word_len = len(beginWord)
         # step = 1
