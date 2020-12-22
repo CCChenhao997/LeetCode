@@ -33,7 +33,7 @@ from typing import List
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:
         if not nums or len(nums) == 0:
-            return  None
+            return None
 
         hashtable = dict()
         for k in nums:
