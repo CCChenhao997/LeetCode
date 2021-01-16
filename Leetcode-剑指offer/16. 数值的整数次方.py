@@ -29,3 +29,17 @@ n 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。
 链接：https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
+
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        """
+        如果 n 是负数，x 转成 分数，n = -n
+        """
+        res = 1
+        if n < 0:
+            x, n = 1 / x, -n
+        while n:
+            if n & 1: res *= x   # n 是奇数
+            n >>= 1              # n //= 2
+            x *= x
+        return res
