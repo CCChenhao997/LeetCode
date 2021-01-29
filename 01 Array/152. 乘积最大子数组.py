@@ -37,11 +37,24 @@ class Solution:
         # return max(dp_max)
         
         # * 空间优化 (由于第 i 个状态只和第 i - 1 个状态相关)
-        n = len(nums)
-        maxF, minF, ans = nums[0], nums[0], nums[0]
-        for i in range(1, n):
-            tmp_max, tmp_min = maxF, minF
-            maxF = max(tmp_max * nums[i], tmp_min * nums[i], nums[i])
-            minF = min(tmp_max * nums[i], tmp_min * nums[i], nums[i])
-            ans = max(maxF, ans)
-        return ans
+        # n = len(nums)
+        # maxF, minF, ans = nums[0], nums[0], nums[0]
+        # for i in range(1, n):
+        #     tmp_max, tmp_min = maxF, minF
+        #     maxF = max(tmp_max * nums[i], tmp_min * nums[i], nums[i])
+        #     minF = min(tmp_max * nums[i], tmp_min * nums[i], nums[i])
+        #     ans = max(maxF, ans)
+        # return ans
+        
+        # * 前后遍历
+        nums_reverse = nums[::-1]
+        for i in range(1, len(nums)):
+            nums[i] *= nums[i - 1] or 1     # or 1的作用是，当nums[i - 1]==0时，nums[i]乘等自身
+            nums_reverse[i] *= nums_reverse[i - 1] or 1
+        return max(max(nums), max(nums_reverse))
+    
+
+if __name__ == '__main__':
+    nums = [2,3,-2,4]
+    s = Solution()
+    print(s.maxProduct(nums))
