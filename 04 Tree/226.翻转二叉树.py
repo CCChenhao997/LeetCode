@@ -34,27 +34,11 @@ class TreeNode:
 # 解法一: DFS
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
-        if not root:
+        if not root: 
             return
-        root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        
+        left = self.invertTree(root.left)
+        right = self.invertTree(root.right)
+        root.left = right
+        root.right = left
         return root
-
-
-"""
-# 解法二: BFS
-class Solution:
-    def invertTree(self, root: TreeNode) -> TreeNode:
-        from collections import deque
-        if not root:
-            return
-        queue = deque()  # 双端队列
-        queue.appendleft(root)
-        while queue:
-            node = queue.pop()
-            node.left, node.right = node.right, node.left
-            if node.left:
-                queue.appendleft(node.left)
-            if node.right:
-                queue.appendleft(node.right)
-        return root
-"""
